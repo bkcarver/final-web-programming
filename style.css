@@ -1,0 +1,62 @@
+/* Styles go here */
+
+[v-cloak] {
+  display: none;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+.radio-toolbar {
+  margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+    display:none; 
+}
+
+.radio-toolbar label {
+    display:inline-block;
+    background-color:#ddd;
+    padding: 10px 20px;
+    font-family:Arial;
+    font-size:16px;
+    border: 2px solid #444;
+    border-radius: 4px;    
+}
+
+.radio-toolbar label:hover {
+  background-color: #dfd;
+}
+
+.radio-toolbar input[type="radio"]:checked + label { 
+    background-color:#bfb;
+    border-color: #4c4;
+}
+
+textarea {
+  display: block;
+  width: 30em;
+  height: 8em;
+}
+
+#results {
+  border: .25em solid gray;
+  margin-top: 1em;
+  background-color: lightblue;
+  padding: 1em;
+}
+#submit {
+    background-color:#ddd;
+    padding: 10px 20px;
+    font-family:Arial;
+    font-size:16px;
+    border: 2px solid #444;
+    border-radius: 4px;    
+}
