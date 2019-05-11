@@ -1,5 +1,5 @@
-var vm = new Vue ({
-  el: "#alpaca-registration",
+var vm = new Vue({
+  el: "#donation-app",
   data: {
     firstName: "",
     lastName: "",
