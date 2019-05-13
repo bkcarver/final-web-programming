@@ -5,9 +5,12 @@ var vm = new Vue({
     lastName: "",
     address: "",
     state: null,
-    country: "",
+    email: "",
     amount: [],
     other: "",
+    receipt:"",
+    anon:"",
+    list:"",
     submitForm: null
   }
 });

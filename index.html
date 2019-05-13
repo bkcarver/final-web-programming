@@ -81,8 +81,8 @@
         </select>
       </label>
 
-      <label for="payment">Country
-        <input id="country" type="text" v-model="country">
+      <label for="email">Email
+        <input id="country" type="text" v-model="email">
       </label>
 
       <label>Select a donation amount:
@@ -98,9 +98,19 @@
         </div>
       </label>
 
-      <label for="status">Other amount:
-        <input type=text id="status" v-model="status">
+      <label for="other">Other amount:
+        <input type=text id="other" v-model="other">
       </label>
+      <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
       <button id="submit" v-on:click="submitForm = true">Submit</button>
     </div>
     
@@ -109,8 +119,12 @@
       <p>Name: {{firstName}} {{lastName}}</p>
       <p>Address: {{address}}</p>
       <p>State: {{state}}</p>
-      <p>Country: {{country}}</p>
+      <p>Email: {{email}}</p>
       <p>Donation Amount: {{amount}}</p>
+      <p>Other Amount: {{other}}</p>
+      <p>Email receipt? {{receipt}}</p>
+      <p>Do you wish to remain anonymous? {{anon}}</p>
+      <p>Add to our mailing list? {{list}}</p>
       <p>Other Amount: {{other}}</p>
     </div>
   </div>
