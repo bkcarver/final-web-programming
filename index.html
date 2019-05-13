@@ -6,8 +6,9 @@
 </head>
 
 <body>
-  <h1>American Red Cross</h1>
-  <h2>Make a Donation.</h2>
+  <div id="logo">Donate</div>
+  <h1>The American Red Cross</h1>
+  <h2>Make a Donation</h2>
   <p>Change Lives with your Gift. Donate Now.</p>
 
   <div id="donation-app" v-cloak>
@@ -80,13 +81,13 @@
         </select>
       </label>
 
-      <label for="country">Country
-        <input id="country" type="text" maxlength="3" v-model="country">
+      <label for="payment">Country
+        <input id="country" type="text" v-model="country">
       </label>
 
       <label>Select a donation amount:
         <div class="radio-toolbar">
-          <input type="radio" id="radioLow" name="radioLow" value="$10" checked>
+          <input type="radio" id="radioLow" name="radioLow" value="$10">
           <label for="radioLow">$10</label>
 
           <input type="radio" id="radioMid" name="radioMid" value="$50">
@@ -98,12 +99,13 @@
       </label>
 
       <label for="status">Other amount:
-        <input type=text id="status" v-model="status"></text>
+        <input type=text id="status" v-model="status">
       </label>
       <button id="submit" v-on:click="submitForm = true">Submit</button>
     </div>
     
     <div id="results" v-if="submitForm==true">
+      <h2>Please verify your information:</h2>
       <p>Name: {{firstName}} {{lastName}}</p>
       <p>Address: {{address}}</p>
       <p>State: {{state}}</p>
@@ -112,7 +114,6 @@
       <p>Other Amount: {{other}}</p>
     </div>
   </div>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
